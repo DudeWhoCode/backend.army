@@ -1,0 +1,52 @@
+{
+    "cells": [
+        {
+            "title": "Python",
+            "image": "https://cdn.worldvectorlogo.com/logos/redis.svg"
+        },
+        {
+            "title": "Golang",
+            "image": "https://cdn.worldvectorlogo.com/logos/redis.svg"
+        },
+        {
+            "title": "Redis",
+            "image": "https://cdn.worldvectorlogo.com/logos/redis.svg"
+        },
+        {
+            "title": "Postgresql",
+            "image": "https://cdn.worldvectorlogo.com/logos/redis.svg"
+        },
+        {
+            "title": "AWS cloud",
+            "image": "https://cdn.worldvectorlogo.com/logos/redis.svg"
+        },
+        {
+            "title": "Azure cloud",
+            "image": "https://cdn.worldvectorlogo.com/logos/redis.svg"
+        },
+        {
+            "title": "API design",
+            "image": "https://cdn.worldvectorlogo.com/logos/redis.svg"
+        },
+        {
+            "title": "Scaling",
+            "image": "https://cdn.worldvectorlogo.com/logos/redis.svg"
+        },
+        {
+            "title": "Devops",
+            "image": "https://cdn.worldvectorlogo.com/logos/redis.svg"
+        },
+        {
+            "title": "Cassandra",
+            "image": "https://cdn.worldvectorlogo.com/logos/redis.svg"
+        },
+        {
+            "title": "Kafka",
+            "image": "https://cdn.worldvectorlogo.com/logos/redis.svg"
+        },
+        {
+            "title": "Reactjs",
+            "image": "https://cdn.worldvectorlogo.com/logos/redis.svg"
+        }
+    ]
+}
