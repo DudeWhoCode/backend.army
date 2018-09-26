@@ -5,7 +5,9 @@ import Section from '../components/Section'
 import Wave from '../components/Wave';
 import staticdata from '../../staticdata.json'
 import Cell from '../components/Cell';
+import Hero from '../components/Hero'
 import styled from 'styled-components'
+
 
 const SectionCaption = styled.p`
   font-weight: 600;
@@ -29,24 +31,7 @@ const SectionCellGroup = styled.p`
 
 const IndexPage = () => (
   <div>
-    <div className="Hero" >
-      <div className="HeroGroup">
-        <h1>NARENDRAN</h1>
-        <br />
-        <p>Software Consultant</p>  
-        <p>backend | cloud architecting | product engineering</p>
-        <Link to="/page-2/">Action item</Link>
-        <div className="Logos">
-          <img src={require('../images/logo-python.png')} width="50"></img>
-          <img src={require('../images/logo-go.png')} width="50"></img>
-          <img src={require('../images/logo-aws.png')} width="50"></img>
-          <img src={require('../images/logo-azure.png')} width="50"></img>
-          <img src={require('../images/logo-postgres.png')} width="50"></img>
-          <img src={require('../images/logo-react.png')} width="50"></img>
-        </div>
-        <Wave />
-      </div>
-    </div>
+    <Hero />
     <div className="Cards">
       <h2>My projects</h2>
       <div className="CardGroup">
