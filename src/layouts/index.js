@@ -34,6 +34,16 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        description
+        keywords
+      }
+    },
+    allContentfulLink(sort: {fields: [createdAt], order: ASC}) {
+      edges {
+        node {
+          title
+          url
+        }
       }
     }
   }
