@@ -6,6 +6,7 @@ import Wave from '../components/Wave';
 import staticdata from '../../staticdata.json'
 import Cell from '../components/Cell';
 import Hero from '../components/Hero'
+import Splash from '../components/Splash'
 import styled from 'styled-components'
 
 
@@ -31,7 +32,7 @@ const SectionCellGroup = styled.p`
 
 const IndexPage = () => (
   <div>
-    <Hero />
+    <Splash />
     <div className="Cards">
       <h2>My projects</h2>
       <div className="CardGroup">
