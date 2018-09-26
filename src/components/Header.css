@@ -16,7 +16,7 @@
     max-width: 800px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(5, auto); /*This distributes the 5 elements equally with auto width. The
+    grid-template-columns: repeat(4, auto); /*This distributes the 5 elements equally with auto width. The
     spacing/width adjusts when more elements are added. repeat is used instead of using 5 x auto. */
     align-items: center; /*vertical alignment*/
     justify-items: center; /*horizontal alignment*/
