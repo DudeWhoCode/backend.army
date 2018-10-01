@@ -107,14 +107,18 @@ a {
   }
 }
 
+.Cards {
+  background: #f5d300;
+}
+
 .Cards h2 {
-  margin: 50px 20px;
+  margin: 0 20px 50px;
   font-size: 60px;
   text-align: center;
   font-weight: 700px;
-  background: linear-gradient(104deg, #050A27 0%, #4A548C 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(104deg, #050A27 0%, #4A548C 100%); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 }
 
 .CardGroup {
