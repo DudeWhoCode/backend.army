@@ -33,7 +33,8 @@ class Header extends React.Component {
         <Link to="/talks">Talks</Link>
         <Link to="/projects">Projects</Link>
         <Link to="/blog">Blog</Link>
-        <Link to="/buy"><button>Contact</button></Link>
+        {/* <Link to="/buy"><button>Contact</button></Link> */}
+        <Link to="/contact">Contact</Link>
       </div>
     </div>
     )
