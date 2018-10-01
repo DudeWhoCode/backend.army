@@ -17,9 +17,8 @@ const Layout = ({ children, data }) => (
     />
     <Header />
     {children()}
-    <Footer data={data}>
-      Built with 💖 using react
-    </Footer>
+    {/* <Footer data={data}> */}
+    <Footer />
   </div>
 )
 
