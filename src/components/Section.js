@@ -4,7 +4,8 @@ import Wave from './Wave';
 
 const SectionGroup = styled.div`
     background: url(${props => props.image});
-    height: 720px;
+    background-position: 0 -80px;
+    height: 520px; 
     background-size: cover;
     display: grid;
     grid-template-rows: 300px auto;
@@ -25,8 +26,10 @@ const SectionTitleGroup = styled.div`
     display: grid;
     grid-template-columns: 300px auto;
     margin: 0 40px;
+    padding-top: 50px;
     grid-gap: 20px;
-    grid-template-rows: auto 100%;
+    ${'' /* grid-template-rows: auto 100%; */}
+    grid-template-columns: repeat(2, 1fr);
 
     @media (max-width: 720px) {
         grid-template-columns: 1fr;
@@ -54,15 +57,15 @@ const WaveBottom = styled.div`
 const WaveTop = styled.div`
     position: absolute;
     width: 100%;
-    top: -9px;
-    transform: rotate(180deg);
+    top: -140px;
+    ${'' /* transform: rotate(180deg); */}
 `
 
 const Section = props => (
     <SectionGroup image={props.image}>       
-        <WaveTop><Wave /></WaveTop>
-        <WaveBottom><Wave /></WaveBottom>
-        <SectionLogo src={props.logo}/>
+        <WaveTop><Wave color="black" /></WaveTop>
+        <WaveBottom><Wave color="#f5d300" /></WaveBottom>
+        {/* <SectionLogo src={props.logo}/> */}
         <SectionTitleGroup>
             <SectionTitle>{props.title}</SectionTitle>
             <SectionText>{props.text}</SectionText>
