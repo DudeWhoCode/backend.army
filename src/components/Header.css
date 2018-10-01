@@ -6,10 +6,35 @@
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1)
 }
 
-.HeaderScrolled {
+/* .HeaderScrolled {
     background: rgba(0, 0, 0, 0.8);
     padding: 15px 0;   
     backdrop-filter: blur(20px);
+} */
+
+.HeaderScrolled {
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;  
+    z-index: 100; /* Higher the z-index, you're telling that it stays at the top*/
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.HeaderScrolled a {
+    color: white;
+    font-weight: 700;
+    padding: 8px 20px;
+    font-size: 20px;
+    /* background: white;
+    border: none;
+    border-radius: 10px; */
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1); /* Add duration to the .Header button:hover properties,
+    cubic-bezier brings up the animation faster and finish it slower */
 }
 
 .HeaderGroup {
@@ -22,9 +47,32 @@
     justify-items: center; /*horizontal alignment*/
 }
 
+/* .Header a {
+    color: black;
+    font-weight: 700;
+} */
+
 .Header a {
     color: white;
     font-weight: 700;
+    padding: 8px 20px;
+    font-size: 20px;
+    /* background: #56ccf2; */
+    background: black;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1); /* Add duration to the .Header button:hover properties,
+    cubic-bezier brings up the animation faster and finish it slower */
+}
+
+.Header a:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 10px 20px rgba(0,0,0, 0.25);
+    transform: translateY(-3px); /* while hovering, move the button up a bit, check rotateY(50deg) */
 }
 
 .Header button {
