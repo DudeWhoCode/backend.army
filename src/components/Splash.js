@@ -1,8 +1,9 @@
 import React from 'react'
 import './Splash.css'
-
+import scrollToPosition from '../events/Scroll'
 
 class Splash extends React.Component {
+    
     render() {
       return (
         <div className="splash">
@@ -20,9 +21,9 @@ class Splash extends React.Component {
                 </svg>
             </div>
             <div className="text">
-                <p>NARENDRAN</p>
+                <h2>NARENDRAN</h2>
                 <p>Software Consultant</p>
-                <button>More</button>
+                <button onClick={scrollToPosition}>Know More</button>
             </div>
         </div>
       )
