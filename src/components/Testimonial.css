@@ -1,0 +1,55 @@
+.Testimonial {
+    width: 300px;
+    height: 425px;
+    position: relative;
+    overflow: hidden; /* Even though image takes whole space, mask it by hiding overflown image*/
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(2, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    z-index: 1;
+}
+
+.Testimonial:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+}
+
+.Bg:hover {
+    transform: translateY(-20px);
+}
+
+.Bg {
+    position: absolute;
+    top: 0;
+    height: 110%;
+    z-index: -1; 
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    filter: brightness(70%)
+}
+
+.Testimonial h3 {
+    color: white;
+    font-size: 20px;
+    margin: 20px 0 0 20px;
+    width: 190px;
+}
+
+.Testimonial p {
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    font-size: 18px;
+    /* align-self: end; Instead of aligning all items, align only this p tag */
+    margin: 0 20px 50px 20px;
+    padding-top: 30px;
+}
+
+.logo {
+    position: absolute;
+    margin: 10px 225px auto;
+    border-radius: 10px;
+    max-height: 64px;
+    max-width: 64px;
+}
