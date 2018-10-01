@@ -49,16 +49,22 @@ const IndexPage = () => (
       <div className="CardGroup">
         <Card title="MAD stack" 
         text="Microservices" 
-        image={require('../images/wallpaper.jpg')} />
-        <Card title="Vue Studio" 
+        image={require('../images/wallpaper-galaxy.jpg')} />
+        <Card title="Shop the video" 
         text="AI platform" 
-        image={require('../images/wallpaper.jpg')} />
+        image={require('../images/wallpaper-galaxy.jpg')} />
         <Card title="YellowJacket" 
         text="Load testing platform" 
-        image={require('../images/wallpaper.jpg')} />
+        image={require('../images/wallpaper-galaxy.jpg')} />
         <Card title="Kulay" 
         text="Message passing platform" 
-        image={require('../images/wallpaper.jpg')} />
+        image={require('../images/wallpaper-galaxy.jpg')} />
+        <Card title="Mine Portal" 
+        text="Visualizing whats under the earth" 
+        image={require('../images/wallpaper-galaxy.jpg')} />
+        <Card title="backend.army" 
+        text="coming soon..." 
+        image={require('../images/wallpaper-galaxy.jpg')} />
       </div>
     </div>
     <Section
