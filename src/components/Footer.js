@@ -6,8 +6,6 @@ const FooterGroup = styled.div`
     padding: 50px 0;
     display: grid;
     grid-gap: 20px;
-    
-    
 `
 const Text = styled.p`
     font-size: 24px;
@@ -58,16 +56,22 @@ const Copyright = styled.div`
 
 `
 
+// const Footer = ({data, children}) => (
+//     <FooterGroup>
+//         <Text>Tweet at me</Text>
+//         <Button>Tweet</Button>
+//         <LinkGroup>
+//             {data.allContentfulLink.edges.map( edge => (
+//             <a href={edge.node.url}>{edge.node.title}</a>
+//             ))}
+//         </LinkGroup>
+//         <Copyright>{children}</Copyright>
+//     </FooterGroup>
+// )
+
 const Footer = ({data, children}) => (
     <FooterGroup>
-        <Text>Tweet at me</Text>
-        <Button>Tweet</Button>
-        <LinkGroup>
-            {data.allContentfulLink.edges.map( edge => (
-            <a href={edge.node.url}>{edge.node.title}</a>
-            ))}
-        </LinkGroup>
-        <Copyright>{children}</Copyright>
+        <Text>Built with ☕ and ❤️ using react</Text>
     </FooterGroup>
 )
 
