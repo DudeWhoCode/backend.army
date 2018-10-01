@@ -36,14 +36,6 @@ export const query = graphql`
         description
         keywords
       }
-    },
-    allContentfulLink(sort: {fields: [createdAt], order: ASC}) {
-      edges {
-        node {
-          title
-          url
-        }
-      }
     }
   }
 `
