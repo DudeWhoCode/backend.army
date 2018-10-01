@@ -67,15 +67,60 @@ const IndexPage = () => (
         image={require('../images/wallpaper-galaxy.jpg')} />
       </div>
     </div>
-    <Section
-  image={require('../images/wallpaper-moon.jpg')}
-  logo={require('../images/logo-react.png')}
-  title="React for Designers"
-  text="Learn how to build a modern site using React and the most 
-  efficient libraries to get your site/product online. 
-  Get familiar with components, Grid CSS, animations, interactions, dynamic data with 
-  Contentful and deploying your site with Netlify." />  
-  <SectionCaption>
+  <div className="Use">
+    <div className="UseGroup">
+      <h1>What I use</h1>
+      <div className="Subtitle">
+        <p>I use some stuffs that aren't completely terrible.</p>
+      </div>
+      <h2>Infra and Hosting</h2>
+      <p>
+        Mostly, I use AWS to spin up servers for my personal projects. I use github pages to host this portfolio page. I use Ghost containers hosted in digital ocean servers for my blog
+      </p>
+      <h2>Version Control</h2>
+      <p>
+      Since I started working on software from 2013, fortunately I did not struggle with 
+      version control systems as my senior devs did. I started using git right away. 
+      I host all my public projects in github. For my private repositories, I used Bitbucket for a while. 
+      Then explored Gitlab, but some how I liked the simple experience of github's issue tracker and kanban boards. So, I started paying github for private repositories.
+      </p>
+      <h2>IDE and Editors</h2>
+      <p>
+        I started loving emacs from the day one. When I am not using terminal I will be using Pycharm for python and Gogland for Go programming. I pay for them as they make me more productive with lots of features and integrations. I use Sublime Text as my html and markdown editor.
+      </p>
+      <h2>OS</h2>
+      <p>
+        Ubuntu, Debian in servers and OS X in laptop.
+      </p>
+    </div>
+  </div>
+  <div className="Testimonials">
+    <h2>Here's what people say about me</h2>
+    <div className="TestimonialsGroup">
+      <Testimonial 
+        title="Naresh Kumar Pidikiti"
+        text="A smart worker, always with a curiosity to explore technology. He built complex systems with simple interfaces."
+        image={require('../images/wallpaper-hills.jpg')}
+        logo={require('../images/logo-linkedin.png')}
+        linkedIn="https://www.linkedin.com/in/naresh-kumar-p-95a6741a/"
+      />
+      <Testimonial 
+        title="Senthil Velan"
+        text="Naren helped us to showcase multiple prototypes for our client visits. His knack for rapid prototyping always amazes me."
+        image={require('../images/wallpaper-hills.jpg')}
+        logo={require('../images/logo-linkedin.png')}
+        linkedIn="https://www.linkedin.com/in/jsvelan/"
+      />
+      <Testimonial 
+        title="Saravana Kumar"
+        text="I have worked with Naren in many projects at scale. Here are some words I would use to describe him: Result oriented, Vision focused, quality and timely delivery and most importantly consistency."
+        image={require('../images/wallpaper-hills.jpg')}
+        logo={require('../images/logo-linkedin.png')}
+        linkedIn="https://www.linkedin.com/in/saravanakumar-karunanithi-a5bb8b10/"
+      />
+    </div>
+  </div>
+  {/* <SectionCaption>
     The tech stacks I have worked so far
   </SectionCaption>
   <SectionCellGroup>
@@ -84,7 +129,7 @@ const IndexPage = () => (
         title={cell.title}
         image={cell.image} />
     ))}
-  </SectionCellGroup>
+  </SectionCellGroup> */}
   </div>
 )
 
