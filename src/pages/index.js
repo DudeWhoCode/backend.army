@@ -2,12 +2,12 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Card from '../components/Card'
 import Section from '../components/Section'
-import Wave from '../components/Wave';
 import staticdata from '../../staticdata.json'
 import Cell from '../components/Cell';
 import Hero from '../components/Hero'
 import Splash from '../components/Splash'
 import styled from 'styled-components'
+import Testimonial from '../components/Testimonial';
 
 
 const SectionCaption = styled.p`
@@ -30,9 +30,20 @@ const SectionCellGroup = styled.p`
   }
 `
 
+const Projects = styled.div`
+  background: #f5d300;
+
+`
+
 const IndexPage = () => (
   <div>
     <Splash />
+    <Section
+      image={require('../images/wallpaper-phase.jpg')}
+      logo={require('../images/logo-react.png')}
+      title="My Expertise"
+      text="I am an end to end backend engineer who designes APIs, Databases, Designs backend
+      architecture in cloud, deployes them and scale them to millions." />
     <div className="Cards">
       <h2>My projects</h2>
       <div className="CardGroup">
