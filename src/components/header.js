@@ -27,7 +27,8 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}>
+      // <div className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}>
+      <div className={this.state.hasScrolled ? 'HeaderScrolled' : 'Header'}>
       <div className="HeaderGroup">
         {/* <Link to="/"><img src={require('../images/logo-designcode.svg')} width="30" /></Link> */}
         <Link to="/talks">Talks</Link>
