@@ -63,8 +63,14 @@ const WaveTop = styled.div`
 
 const Section = props => (
     <SectionGroup image={props.image}>       
-        <WaveTop><Wave color="black" /></WaveTop>
-        <WaveBottom><Wave color="#f5d300" /></WaveBottom>
+        <WaveTop><Wave 
+            color="black" 
+            animate={props.animate}
+        /></WaveTop>
+        <WaveBottom><Wave 
+            color="#f5d300" 
+            animate={props.animate}
+        /></WaveBottom>
         {/* <SectionLogo src={props.logo}/> */}
         <SectionTitleGroup>
             <SectionTitle>{props.title}</SectionTitle>
