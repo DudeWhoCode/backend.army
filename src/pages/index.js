@@ -43,7 +43,8 @@ const IndexPage = () => (
       logo={require('../images/logo-react.png')}
       title="My Expertise"
       text="I am an end to end backend engineer who designes APIs, Databases, Designs backend
-      architecture in cloud, deployes them and scale them to millions." />
+      architecture in cloud, deployes them and scale them to millions."
+      animate="true" />
     <div className="Cards">
       <h2>My projects</h2>
       <div className="CardGroup">
