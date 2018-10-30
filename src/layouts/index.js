@@ -17,9 +17,8 @@ const Layout = ({ children, data }) => (
     />
     <Header />
     {children()}
-    <Footer data={data}>
-      Built with 💖 using react
-    </Footer>
+    {/* <Footer data={data}> */}
+    <Footer />
   </div>
 )
 
@@ -36,14 +35,6 @@ export const query = graphql`
         title
         description
         keywords
-      }
-    },
-    allContentfulLink(sort: {fields: [createdAt], order: ASC}) {
-      edges {
-        node {
-          title
-          url
-        }
       }
     }
   }
