@@ -2,13 +2,10 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Card from '../components/Card'
 import Section from '../components/Section'
-import staticdata from '../../staticdata.json'
-import Cell from '../components/Cell';
 import Hero from '../components/Hero'
-import Splash from '../components/Splash'
 import styled from 'styled-components'
-import Testimonial from '../components/Testimonial';
-
+import LatestCourse from '../components/LatestCourse';
+import CourseOutline from '../components/Outline'
 
 const SectionCaption = styled.p`
   font-weight: 600;
@@ -37,15 +34,44 @@ const Projects = styled.div`
 
 const IndexPage = () => (
   <div>
-    <Splash />
+    <Hero />
     <Section
       image={require('../images/wallpaper-phase.jpg')}
-      logo={require('../images/logo-react.png')}
-      title="My Expertise"
-      text="I am an end to end backend engineer who designes APIs, Databases, Designs backend
-      architecture in cloud, deployes them and scale them to millions."
-      animate="true" />
-    <div className="Cards">
+      logo={require('../images/undraw_cloud_hosting_aodd.svg')}
+      title="Title"
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sollicitudin neque id auctor sodales. 
+      Morbi hendrerit eget mi sit amet ullamcorper. Nam urna tellus, egestas ut est a, aliquam tristique mauris. 
+      Nulla facilisi."
+      swap="false" />
+    <Section
+      image={require('../images/wallpaper-phase.jpg')}
+      logo={require('../images/undraw_freelancer_b0my.svg')}
+      title="Title"
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sollicitudin neque id auctor sodales. 
+      Morbi hendrerit eget mi sit amet ullamcorper. Nam urna tellus, egestas ut est a, aliquam tristique mauris. 
+      Nulla facilisi."
+      swap="false" />
+    <Section
+      image={require('../images/wallpaper-phase.jpg')}
+      logo={require('../images/undraw_outer_space_3v6n.svg')}
+      title="Title"
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sollicitudin neque id auctor sodales. 
+      Morbi hendrerit eget mi sit amet ullamcorper. Nam urna tellus, egestas ut est a, aliquam tristique mauris. 
+      Nulla facilisi."
+      swap="false" />
+
+    <div className="LatestCourseGroup">
+      <h1>Latest Courses</h1>
+      <LatestCourse
+        courseTitle="Building microservice"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sollicitudin neque id auctor sodales. 
+        Morbi hendrerit eget mi sit amet ullamcorper. Nam urna tellus, egestas ut est a, aliquam tristique mauris. 
+        Nulla facilisi."
+        cta="Take this course"
+        link="/microservices-course"
+      />
+    </div>
+    {/* <div className="Cards">
       <h2>My projects</h2>
       <div className="CardGroup">
         <Card title="MAD stack" 
@@ -67,8 +93,8 @@ const IndexPage = () => (
         text="coming soon..." 
         image={require('../images/wallpaper-galaxy.jpg')} />
       </div>
-    </div>
-  <div className="Use">
+    </div> */}
+  {/* <div className="Use">
     <div className="UseGroup">
       <h1>What I use</h1>
       <div className="Subtitle">
@@ -94,8 +120,8 @@ const IndexPage = () => (
         Ubuntu, Debian in servers and OS X in laptop.
       </p>
     </div>
-  </div>
-  <div className="Testimonials">
+  </div> */}
+  {/* <div className="Testimonials">
     <h2>Here's what people say about me</h2>
     <div className="TestimonialsGroup">
       <Testimonial 
@@ -120,7 +146,7 @@ const IndexPage = () => (
         linkedIn="https://www.linkedin.com/in/saravanakumar-karunanithi-a5bb8b10/"
       />
     </div>
-  </div>
+  </div> */}
   {/* <SectionCaption>
     The tech stacks I have worked so far
   </SectionCaption>

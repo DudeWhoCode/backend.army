@@ -1,4 +1,4 @@
-.Hero {
+.TalkHero {
     /* background: #69fa8de5; */
     background: #f5d300;
     height: 520px;
@@ -7,14 +7,14 @@
     position: relative;  /* Set context to child to follow if child's position is absolute */
   }
   
-  .HeroGroup {
+  .TalkHeroGroup {
     margin: 0 auto;
     max-width: 800px;
     padding: 200px 50px;
     text-align: center; 
   }
   
-  .Hero h1 {
+  .TalkHero h1 {
     margin: 0;
     color: black;
     font-size: 40px;
@@ -29,17 +29,17 @@
     animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Bring up the animation faster and finish it slower */
   }
   
-  .Hero p {
+  .TalkHero p {
     color: black;
     font-size: 25px;
     font-style: italic;
     text-align: right;
     line-height: 1.5;
-    animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+    animation: TalkHeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
     opacity: 0;
   }
   
-  .Hero a {
+  .TalkHero a {
     font-size: 17px;
     font-weight: 600;
     color: white;
@@ -51,25 +51,25 @@
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
   
-  .Hero a:hover {
+  .TalkHero a:hover {
     background: white;
     color: black;
   }
   
   @media (max-width: 640px) {
-    .HeroGroup {
+    .TalkHeroGroup {
       padding: 100px 20px;
     }
   
-    .Hero h1 {
+    .TalkHero h1 {
       font-size: 24px;
     }
   }
   
-  @keyframes HeroAnimation {
+  @keyframes TalkHeroAnimation {
     0% {
       opacity: 0;    
-      transform: translateX(80px);
+      transform: translateY(80px);
     }
     100% {
       opacity: 1;
@@ -77,13 +77,13 @@
     }
   }
   
-  .Hero svg {
+  .TalkHero svg {
     position: absolute;
     bottom: 0;
     left: 0;
   }
   
-  .Hero .Logos {
+  .TalkHero .Logos {
     display: grid;
     grid-template-columns: repeat(6, 1fr); /* fr - fraction unit. Tries to divide the columns by equal fraction */
     grid-gap: 40px;
@@ -92,7 +92,7 @@
   }
   
   @media (max-width: 640px) {
-    .Hero .Logos {
+    .TalkHero .Logos {
       grid-template-columns: repeat(3, 1fr);
     }
   }

@@ -3,80 +3,84 @@ import styled from 'styled-components'
 import Wave from './Wave';
 
 const SectionGroup = styled.div`
-    background: url(${props => props.image});
-    background-position: 0 -80px;
-    height: 520px; 
-    background-size: cover;
+    background: #1d2224;
+    height: 420px; 
     display: grid;
-    grid-template-rows: 300px auto;
+    grid-template-columns: 50% auto;
     grid-gap: 20px;
     position: relative;
-
-    @media (max-width: 640px) {
+    @media (max-width: 720px) {
         height: 820px;
+        grid-template-columns: none;
+        grid-template-rows: 30% auto;
     }
+`
+
+const SectionImgGroup = styled.div`
+    margin: 0 auto;
+    height: 245px;
 `
 
 const SectionLogo = styled.img`
-    align-self: end;
-    width: 120px;
-    margin: 0 auto;
+    width: 420px;
+    padding-top: 40px;
+    @media (max-width: 640px) {
+        width: 320px;
+    }
 `
 const SectionTitleGroup = styled.div`
     display: grid;
-    grid-template-columns: 300px auto;
     margin: 0 40px;
     padding-top: 50px;
+    display: inline;
     grid-gap: 20px;
-    ${'' /* grid-template-rows: auto 100%; */}
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 100%;
+    ${'' /* grid-template-rows: repeat(2, 1fr); */}
 
     @media (max-width: 720px) {
-        grid-template-columns: 1fr;
+        grid-template-rows: 1fr; 
+        text-align: justify;
     }
 `
-const SectionTitle = styled.h3`
-    color: white;
-    font-size: 60px;
+
+const SectionTitle = styled.h1`
     margin: 0;
     line-height: 1.2;
-
     @media (max-width: 720px) {
         font-size: 40px;
     }
 `
 const SectionText = styled.p`
-    color: white;
 
 `
-const WaveBottom = styled.div`
-    position: absolute;
-    width: 100%;
-    bottom: -9px;
-`
-const WaveTop = styled.div`
-    position: absolute;
-    width: 100%;
-    top: -140px;
-    ${'' /* transform: rotate(180deg); */}
-`
 
-const Section = props => (
-    <SectionGroup image={props.image}>       
-        <WaveTop><Wave 
-            color="black" 
-            animate={props.animate}
-        /></WaveTop>
-        <WaveBottom><Wave 
-            color="#f5d300" 
-            animate={props.animate}
-        /></WaveBottom>
-        {/* <SectionLogo src={props.logo}/> */}
-        <SectionTitleGroup>
-            <SectionTitle>{props.title}</SectionTitle>
-            <SectionText>{props.text}</SectionText>
-        </SectionTitleGroup>
+const Section = props => {
+
+    if (props.swap === "true") {
+        return(
+            <SectionGroup image={props.image}>
+            <SectionTitleGroup>
+                <SectionTitle>{props.title}</SectionTitle>
+                <SectionText>{props.text}</SectionText>
+            </SectionTitleGroup>
+            <SectionImgGroup>
+                <SectionLogo src={props.logo}/>
+            </SectionImgGroup>
     </SectionGroup>
-)
+        )
+    } else {
+        return(
+            <SectionGroup>
+                <SectionImgGroup>
+                    <SectionLogo src={props.logo}/>
+                </SectionImgGroup>
+                <SectionTitleGroup>
+                    <SectionTitle>{props.title}</SectionTitle>
+                    <SectionText>{props.text}</SectionText>
+                </SectionTitleGroup>
+            </SectionGroup>
+        )
+    }
+}
 
 export default Section

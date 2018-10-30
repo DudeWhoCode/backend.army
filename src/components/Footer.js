@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const FooterGroup = styled.div`
-    background: black;
+    background: #1d2224;
     padding: 50px 0;
     display: grid;
     grid-gap: 20px;
